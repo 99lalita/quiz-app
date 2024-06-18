@@ -1,0 +1,107 @@
+body {
+  background-color: var(--bg-color);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0 30px;
+  background-image: radial-gradient(
+    circle farthest-corner at 32.7% 82.7%,
+    rgba(173, 0, 171, 1) 8.3%,
+    rgba(15, 51, 92, 1) 79.4%
+  );
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.App {
+  font-family: poppins;
+  text-align: center;
+  background-image: radial-gradient(
+    circle 311px at 8.6% 27.9%,
+    rgba(62, 147, 252, 0.57) 12.9%,
+    rgba(239, 183, 192, 0.44) 91.2%
+  );
+  width: 600px;
+  overflow-x: hidden;
+  margin: auto;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+}
+
+.question {
+  margin: 20px auto;
+  width: 60%;
+  border: 4px solid #ddd;
+  padding: 15px 25px;
+  border-radius: 15px;
+}
+
+.question h2 {
+  margin-bottom: 10px;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.options > li > button {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* border: 1px solid grey; */
+}
+
+button:hover {
+  background-color: rgba(69, 71, 69, 0.178);
+  color: black;
+}
+
+.results {
+  margin: 20px auto;
+  padding: 25px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    174.2deg,
+    rgba(255, 244, 228, 1) 7.1%,
+    rgba(240, 246, 238, 1) 67.4%
+  );
+}
+
+.results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.results span {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.results li {
+  margin-bottom: 10px;
+}
+
+.results li[data-correct="true"] {
+  color: green;
+}
+
+.results li[data-correct="false"] {
+  color: red;
+}
